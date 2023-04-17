@@ -12,7 +12,7 @@ function App() {
 
   const handleCalculateClick = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/api/distance?source=${source}&destination=${destination}`
+      const response = await axios.get(`https://afternoon-escarpment-95639.herokuapp.com/api/distance?source=${source}&destination=${destination}`
       );
       
       setDistance(response.data);
@@ -25,7 +25,7 @@ function App() {
   };
 
   const handleHistoryClick = async () => {
-    window.location.href = "http://localhost:8080/api/history";
+    window.location.href = "https://afternoon-escarpment-95639.herokuapp.com/api/history";
   };
 
   return (
