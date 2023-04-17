@@ -14,9 +14,9 @@ This documents aims to answer the challenge questions.
 6. What other considerations would you have to make the development process robust
 and efficient?
 
-# Abstract
+# Context
 
-A client wants to prevent being outperformed by his competitors during post-pandemic situation by offering a Delivery app as a new channel for their customers. This document present a short term and long term proposal, aiming to experiment with a working prototype for 3 months, gather information and decide on how to procced with a long term solution. 
+A client wants to prevent being outperformed by his competitors during post-pandemic situation by offering a Delivery app as a new channel for their customers. This document present a short term and a long term proposals, aiming to experiment with a working prototype for 3 months, gather information and decide on how to procced with the long term solution. 
 
 
 # Goal
@@ -64,7 +64,7 @@ We will have a mix of a basic 3 tier architecture system divided by usage (Custo
 ## MVP Software pieces:
 
 1) Client-side tier: 2 pieces of software (Customer, Delivery Agent UI Applications)
-2) Server-side tier: 8 pieces of sotware (2 AA service, Catalog Service, Order service, Agent CRUD Service, Message Broker, Agent Notification service, Customer Notification Service, Delivery Engine)
+2) Server-side tier: 8 pieces of software (2 Authe/Autho service, Catalog Service, Order service, Agent CRUD Service, Message Broker, Agent Notification service, Customer Notification Service, Delivery Engine)
 3) Data Management tier: 1 piece of software (Relational DB).
 
 ## Long term solution software pieces:
@@ -81,7 +81,7 @@ To be able to scale (Several business locations) we will implement/expand:
 
 # Implementation 
 ## Methodology
-We will use a mix of Scrum to take advantage of the flexibility of agile development. In my experience what works better is the follwing configurations: 2 weeks sprint, 1 Retro per month, 1 Demo per sprint, Planning 1 day before starting the sprint and Grooming 3 days before starting the sprints. Daily's at mid day. 
+We will use a mix of Scrum to take advantage of the flexibility of agile development. In my experience what works better is the following configurations: 2 weeks sprint, 1 Retro per month, 1 Demo per sprint, Planning 1 day before starting the sprint and Grooming 3 days before starting the sprints. Daily's at mid day. 
 We will combine this agile methodology with Kanban dashboard to keep track of the progress.
 
 With this combination we can keep track on how the implementation is going, remove major blocks, call out risk we encounter, and keep flexibility to changes.
@@ -100,12 +100,12 @@ We can make our pipeline full CD/CI (all the way to prod) once we have more reso
 
 It will depend on the time to market we aim and discuss with the client. I can see some developemt domains we can parallelize if we need to go faster. 
 
-I would at maximum allocate 3 Software Developers, with 1 of them being the project leader I could take that role to keep the team aligned: 
+I would at maximum allocate 3 Software Developers, with 1 of them being the project leader I could take that role to keep the team aligned, review the code, and collaborate implementing the critical path:
 1) Customer Domain (Front/Back) 
 2) Delivery Agent Domain (Front/Back) 
 3) Infrastructure and Data Domain.
 
-I believe 1 UX (Dev Designer), 1 Impact Lead, 1 DS and 1 MLE are enough for consultations on the prototype.
+Base on my experience 1 UX (Dev Designer), 1 Impact Lead, 1 DS and 1 MLE are enough for consultations during the prototype phase.
 
 ## Other considerations
 I would advice to take into consideration the Impact Lead, DS, MLE knowledge and information requirements to make the experiment more efficient. For example, what business metrics do we need to gather? what information should we store? Which are the criterias to consider this a succesful experiment.
