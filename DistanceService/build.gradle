@@ -8,12 +8,6 @@ group = 'bain.interview'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
-jar {
-    manifest {
-        attributes 'Main-Class': 'bain.interview.DistanceService.DistanceServiceApplication'
-    }
-}
-
 repositories {
 	mavenCentral()
 }
